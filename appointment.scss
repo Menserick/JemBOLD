@@ -1,0 +1,227 @@
+@import 'reset';
+@import 'palette';
+@import 'mixin';
+@import 'features';
+
+body{
+    section{
+        &.sect1{
+            @include center;
+            background-color: var(--white);
+            height: 50vh;
+            min-height: unset;
+
+            
+            &::before{
+                content: '';
+                background-color: #00000086;
+                backdrop-filter: blur(5px);
+                position: absolute;
+                top: 0;right: 0;left: 0;bottom: 0;
+                z-index: -1;
+            }
+
+            &>div{
+                &:first-of-type{
+                    @include vertical;
+                    justify-content: center;
+                    padding: 2.5em 0;
+
+                    h1{
+                        font-family: comfortaa;
+                        font-size: 3.5em;
+                        color: var(--white);
+                        margin: .4em 0;
+                        text-align: center;
+
+                        &,*{
+                            font-weight: 700;
+                        }
+
+                        span{
+                            font-weight: normal;
+                            color: var(--logoBlue);
+                        }
+                    }
+
+                    p{
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+
+        &.sect2{
+            background-color: var(--white);
+
+            &>div{
+                display: flex;
+                width: 100%;
+                @include vertical;
+
+                span.hype{
+                    display: block;
+                    width: fit-content;
+                    margin: 0 auto 2em auto;
+                }
+
+                &>h2{
+                    font-weight: 600;
+                    margin-bottom: 3.5em;
+                    text-transform: capitalize;
+                    text-align: center;
+
+                    &,*{
+                        font-family: comfortaa, poppins, Verdana, Geneva, Tahoma, sans-serif !important;
+                    }
+
+                    span{
+                        color: var(--logoBlue);
+                    }
+                }
+
+                ul{
+                    @include horizontal;
+                    justify-content: space-evenly;
+
+                    @include media(sm){
+                        flex-wrap: wrap;
+                    }
+
+                    li{
+                        width: 100%;
+
+                        div{
+                            &:first-of-type{
+                                @include center;
+                                background-color: var(--white1);
+                                width: 1.4em;
+                                aspect-ratio: 1/1;
+                                padding: 0.5em;
+                                margin-bottom: 1em;
+                                border-radius: .45em;
+
+                                svg{
+                                    width: 100%;
+                                    height: 100%;
+                                    
+                                    path{
+                                        stroke: var(--logoBlue);
+                                    }
+                                }
+                            }
+                            &:last-of-type{
+                                p{
+                                    &:first-of-type{
+                                        font-weight: 700;
+                                        margin-bottom: 1em;
+                                        text-transform: capitalize;
+                                    }
+                                    &:last-of-type{
+                                        font-size: 0.9em;
+                                    }
+                                }
+                            }
+                        }
+                        &:not(:first-of-type){
+                            margin-top: unset;
+                            margin-left: 1em;
+
+                            @include media(sm){
+                                margin-top: 3em;
+                                margin-left: unset;
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul.appC{
+                @include horizontal;
+                align-items: start;
+                justify-content: center;
+                margin-top: 8em;
+                transform: skew(-25deg, 0);
+                
+                @include media(sm){
+                    flex-wrap: wrap;
+                    transform: unset
+                }
+                
+                li{
+                    @include center;
+                    width: 100%;
+                    height: 15rem;
+                    
+                    &>div{
+                        @include vertical;
+                        align-items: center;
+                        justify-content: center;
+                        transform: skew(25deg, 0);
+
+                        @include media(sm){
+                            transform: unset;
+                        }
+
+                        svg{margin-bottom: 1em;}
+                        
+                        
+                        a{
+                            color: var(--white);
+                            width: 10em;
+                            padding: .3em .9em;
+                            margin-top: 1em;
+                            text-align: center;
+                        }
+                    }
+
+                    // &:not(:first-of-type){
+                    //     @include media(sm){
+                    //         margin-top: 8em;
+                    //     }
+                    // }
+
+                    &:first-of-type{
+                        background-color: var(--white3);
+                        p{
+                            color: var(--black);
+                        }
+                        svg{
+                            path{
+                                fill: var(--black);
+                            }
+                        }
+                        
+                        a{
+                            background-color: var(--black);
+                            color: var(white3);
+                        }
+                    }
+                    
+                    &:last-of-type{
+                        background-color: var(--black);
+
+                        p{
+                            color: var(--white3);
+                        }
+
+                        @include media(sm){
+                            margin-top: 0;
+                        }
+
+                        svg{
+                            path{
+                                fill: var(--white3);
+                            }
+                        }
+
+                        a{
+                            background-color: var(--white3);
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

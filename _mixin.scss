@@ -1,0 +1,43 @@
+@mixin center{
+    display: grid;
+    place-items: center;
+}
+@mixin horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin vertical {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+
+$breakpoints: (
+    xxs: 18em,
+    xs: 30em,
+    sm: 48em,
+    md: 62em,
+    lg: 75em,
+    xl: 90em,
+    xxl: 120em
+);
+
+@mixin media($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint){
+        $query: map-get($breakpoints, $breakpoint);
+
+        @if $query {
+            @media (max-width: $query){
+                @content;
+            }
+        }
+        @else {
+            @error "Invalid breakpoint: #{$breakpoint}. Please use one of #{map-keys($breakpoints)}.";
+        }
+    }
+    @else {
+        @error "Undefined breakpoint. #{$breakpoint}. Please define it in hte $breakpoints map."
+    }
+}

@@ -1,0 +1,421 @@
+@import 'reset';
+@import 'palette';
+@import 'mixin';
+@import 'features';
+
+html{
+    body{
+        background-color: var(--white);
+        section{
+            &.sect1{
+                display: flex;
+                align-items: center;
+                background-color: var(--white);
+                // background-image: url(../../asset/images/bg3.JPG);
+                // background-position: center;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-attachment: fixed;
+                height: 50vh;
+                min-height: unset;
+                // padding-top: 5em;
+                // position: relative;
+                // z-index: 2;
+
+                @include media(sm){
+                    height: 60vh;
+                }
+
+                &::before{
+                    content: '';
+                    background-color: #00000086;
+                    backdrop-filter: blur(5px);
+                    position: absolute;
+                    top: 0;right: 0;left: 0;bottom: 0;
+                    z-index: -1;
+                }
+
+                // &::before{
+                //     content: '';
+                //     background-color: #ffffff86;
+                //     backdrop-filter: blur(5px);
+                //     position: absolute;
+                //     top: 0;right: 0;left: 0;bottom: 0;
+                //     z-index: -1;
+                // }
+    
+                // &>div{
+                //     &:first-of-type{
+                //         @include vertical;
+                //         justify-content: center;
+                //         padding: 2.5em 0;
+    
+                //         h1{
+                //             font-family: comfortaa;
+                //             font-size: 3.5em;
+                //             color: var(--black);
+                //             margin: .4em 0;
+
+                //             @include media(sm){
+                //                 font-size: 2em;
+                //             }
+    
+                //             &,*{
+                //                 font-weight: 700;
+                //             }
+    
+                //             span{
+                //                 font-weight: normal;
+                //                 color: var(--logoBlue);
+                //             }
+                //         }
+    
+                //         p{
+                //             color: var(--black);
+
+                //             @include media(sm){
+                //                 font-size: .8em;
+                //             }
+                //         }
+    
+                //         &>div>div{
+                //             &:has(button){
+                //                 @include horizontal;
+                //                 margin-top: 2em;
+    
+                //                 button{
+                //                     cursor: pointer;
+                                    
+                //                     a{
+                //                         @include horizontal;
+                //                         padding: .5em 1.1em;
+    
+                //                         svg{
+                //                             margin-left: 1em;
+        
+                //                             path{
+                //                                 fill: var(--white);
+                //                             }
+                //                         }
+                //                     }
+    
+                //                     &:first-of-type{
+                //                         background-color: var(--blue);
+                //                         margin-right: 1em;
+    
+                //                         a{
+                //                             color: var(--white);
+                //                         }
+    
+                //                         & a:hover{
+                //                             background-color: var(--black);
+                //                         }
+                //                     }
+    
+                //                     &:last-of-type{
+                //                         background-color: var(--white2);
+                //                         background-color: var(--orange);
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+
+                &>div{
+                    &:first-of-type{
+                        @include vertical;
+                        justify-content: center;
+                        padding: 2.5em 0;
+
+                        h1{
+                            font-family: comfortaa;
+                            font-size: 3.5em;
+                            color: var(--white);
+                            margin: .4em 0;
+
+                            @include media(sm){
+                                font-size: 2em;
+                            }
+    
+                            &,*{
+                                font-weight: 700;
+                            }
+    
+                            span{
+                                font-weight: normal;
+                                color: var(--logoBlue);
+                            }
+                        }
+
+                        p{
+                            color: var(--white1);
+
+                            @include media(sm){
+                                font-size: .8em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.exp{
+                background-color: unset;
+                height: unset;
+                min-height: 8em;
+
+                ul{
+                    align-items: start;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    li{
+                        width: calc(100% / 3);
+                        max-width: 25em;
+                        min-width: 20em;
+
+                        @include media(sm){
+                            width: 100%;
+                            max-width: unset;
+                            min-width: unset;
+                        }
+
+                        &:not(:last-of-type){
+                            margin-bottom: 5em;
+                        }
+
+                        div{
+                            p{
+                                font-size: 0.9em;
+                                text-transform: unset;
+                            }
+
+                            &:first-of-type{
+                                margin-right: 2em;
+
+                                p{
+                                    font-size: 4em;
+                                    color: var(--redBg);
+                                }
+                            }
+    
+                            h1{
+                                font-family: poppins, comfortaa, Verdana, Geneva, Tahoma, sans-serif;
+                                font-size: 1.3em;
+                                color: var(--black);
+                            }
+                        }
+                    }    
+                }
+            }
+
+            &.certPersonnel{
+                height: unset;
+                // min-height: 8em;
+
+                div{
+                    &.bragImg{
+                        @include center;
+                        margin-bottom: 10em;
+                        
+                        div{
+                            @include center;
+                            img{
+                                width: 100%;
+                                border-radius: 1em;
+                            }
+
+                            p{
+                                font-size: 1.5em;
+                                background-color: var(--logoBlue);
+                                color: var(--white);
+                                width: 18em;
+                                padding: .5em 1em;
+                                border-radius: 0 0 1em 1em;
+                                position: relative;
+                                text-align: center;
+                                text-transform: capitalize;
+                                
+                                @include media(sm){
+                                    width: 100%;
+                                    top: -.6em;
+                                    z-index: -1;
+                                }
+                                @include media(xs){
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }    
+                    }
+
+                    &.cont{
+                        &>h1{
+                            font-size: 1.5em;
+                            font-style: italic;
+                            color: var(--dark);
+                            margin-bottom: 2.5em;
+                            text-transform: capitalize;
+                        }
+
+                        div{
+                            &.c1{
+                                ul{
+                                    margin-bottom: 5em;
+        
+                                    li{
+                                        list-style-type: circle;
+                                        margin-bottom: 3.5em;
+                                        position: relative;
+        
+                                        &::marker{
+                                            font-weight: 700;
+                                            font-size: 1.5em;
+                                            color:  var(--logoRed);
+                                        }
+        
+                                        p{
+                                            font-size: 1.1em;
+                                            position: relative;
+
+                                            @include media(xxs){
+                                                font-size: .95em;
+                                            }
+        
+                                            &:first-of-type::before{
+                                                content: 'Management Staff';
+                                            }
+                                            &:last-of-type::before{
+                                                content: 'Industry Experience';
+                                            }
+        
+                                            &::before{
+                                                font-weight: 600;
+                                                position: absolute;
+                                                top: -2em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.c2{
+                                margin-bottom: 3em;
+
+                                ul{
+                                    @include horizontal;
+                                    justify-content: space-around;
+                                    align-items: start;
+                                    flex-wrap: wrap;
+
+                                    li{
+                                        width: calc(100% / 2.5);
+                                        min-width: 20em;
+                                        margin-bottom: 5em;
+
+                                        @include media(xxs){
+                                            width: 100%;
+                                            min-width: unset;
+                                        }
+
+                                        h1{
+                                            font-size: 1.8em;
+                                            color: var(--logoBlue);
+                                            margin-bottom: 1em;
+                                            text-align: center;
+                                            text-transform: capitalize;
+                                        }
+
+                                        p{
+                                            text-align: center;
+
+                                            @include media(xxs){
+                                                font-size: 1em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.c3{
+                                h1{
+                                    @include center;                    
+                                    font-size: 1.8em;
+                                    color: var(--logoBlue);
+                                    margin-bottom: 2em;
+                                    position: relative;
+                                    text-align: center;
+                                    text-transform: capitalize;
+
+                                    &::before{
+                                        content: 'core values';
+                                        font-size: .6em;
+                                        font-weight: 600;
+                                        color: var(--logoRed);
+                                        position: absolute;
+                                        top: -1.5em;
+                                        text-transform: uppercase;
+                                    }
+                                }
+
+                                ul{
+                                    display: grid;
+                                    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+                                    gap: 3em;
+                                    
+                                    @include media(sm){
+                                        grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));                                        
+                                    }
+
+                                    li{
+                                        @include center;
+                                        height: 5em;
+                                        border-radius: 1em;
+                                        overflow: hidden;
+                                        box-shadow: 0 .4em .5em 0 #e7e7e7;
+
+                                        @include media(xxs){
+                                            height: 3em;
+                                        }
+
+                                        p{
+                                            font-size: 1.1em;
+                                            color: var(--dark);
+                                            text-transform: capitalize;
+                                        }
+
+                                        // aspect-ratio: 1/.8;
+                                        // position: relative;
+
+                                        // div{
+                                        //     img{
+                                        //         width: 100%;
+                                        //         aspect-ratio: 1/.6;
+                                        //     }
+
+                                        //     &:has(p){
+                                        //         @include center;
+                                        //         height: 5em;
+                                        //         position: absolute;
+                                        //         right: 0;left: 0;bottom: 0;
+
+                                        //         @include media(xxs){
+                                        //             height: 3em;
+                                        //         }
+
+                                        //         p{
+                                        //             font-size: 1.1em;
+                                        //             color: var(--dark);
+                                        //             text-transform: capitalize;
+                                        //         }
+                                        //     }
+                                        // }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
