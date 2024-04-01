@@ -280,156 +280,6 @@ html{
                 }
             }
 
-            // &.forRent{
-            //     background-color: var(--white);
-            //     height: 27.5rem;
-            //     padding: unset;
-            //     padding-bottom: 2.5rem;
-            //     position: relative;
-            //     box-shadow: 0 5px 30px 0 #3232321a;
-            //     z-index: 1;
-            //     overflow: hidden;
-
-            //     @include media(xs){
-            //         height: fit-content;
-            //     }
-
-            //     &::before{
-            //         content: '';
-            //         background-color: inherit;
-            //         width: 60rem;
-            //         aspect-ratio: 1 / 1;
-            //         border-radius: 50%;
-            //         position: absolute;
-            //         right: 30rem;
-            //         transform: translate(0, -4rem);
-            //         z-index: 3;
-                    
-            //         @include media (lg){
-            //             right: 19rem;
-            //         }
-            //         @include media (md){
-            //             right: 15.5rem;
-            //         }
-            //         @include media (sm){
-            //             right: 5rem;
-            //         }
-            //         @include media (xs){
-            //             display: none;
-            //         }
-            //     }
-
-            //     &>div{
-            //         @include center;
-            //         background-color: var(--white);
-            //         width: 35%;
-            //         padding: 1rem 1rem 2rem 1rem;
-            //         position: absolute;
-            //         top: 0;left: 0;bottom: 0;
-            //         z-index: 3;
-
-            //         @include media (md){
-            //             background-color: var(--transparent);
-            //             width: unset;
-            //         }
-
-            //         @include media(xs){
-            //             position: relative;
-            //         }
-
-            //         div{
-            //             margin-left: 3rem;
-
-            //             @include media(xs){
-            //                 margin-left: unset;
-            //             }
-
-            //             p.title1{
-            //                 font-family: "Pacifico";
-            //                 font-size: 1.5rem;
-            //                 font-weight: 400;
-            //                 color: var(--logoBlue);
-            //                 position: relative;
-            //                 top: .8rem;
-            //             }
-            //             h1.title{
-            //                 font-family: Verdana, Geneva, Tahoma, sans-serif;
-            //                 font-size: 4rem;
-            //                 text-transform: uppercase;
-            //                 line-height: 1;
-
-            //                 span{color: var(--logoRed);}
-            //             }
-            //             span.contSpan{
-            //                 @include horizontal;
-            //                 margin-top: 2rem;
-
-            //                 svg{
-            //                     width: 1.5rem;
-            //                     margin-right: 1rem;
-            //                     path{fill: var(--logoBlue);}
-            //                 }
-            //             }
-            //         }
-
-            //     }
-
-            //     button{
-            //         background-color: var(--darkBlue);
-            //         color: var(--white);
-            //         width: 7rem;
-            //         aspect-ratio: 1/1;
-            //         border: .2rem solid var(--white);
-            //         border-radius: 50%;
-            //         position: absolute;
-            //         top: calc(50% - 3.5rem);
-            //         left: calc(50% - 3.5rem);
-            //         transition: background-color .2s ease-in-out, color .2s ease-in-out;
-            //         box-shadow: 0 5px 30px 0 #32323296;
-            //         cursor: pointer;
-            //         z-index: 5;
-
-            //         &:hover{
-            //             background-color: var(--white2);
-            //             color: var(--darkBlue);
-            //         }
-
-            //         @include media(md){
-            //             top: calc(100% - 8rem);
-            //             left: calc(58% - 3.5rem);
-            //         }
-
-            //         @include media(sm){
-            //             width: 10rem;
-            //             aspect-ratio: unset;
-            //             padding: .8rem 1rem;
-            //             margin: 0 auto;
-            //             border-radius: .3rem;
-            //             top: calc(100% - 5rem);
-            //             left: calc(50% - 5rem);
-            //         }
-
-            //         @include media(xs){
-            //             margin-top: 1rem;
-            //             position: relative;
-            //             top: unset;
-            //         }
-            //     }
-                
-            //     img{
-            //         height: 100%;
-            //         position: absolute;
-            //         top: 0;right: 0;bottom: 0;
-            //         z-index: 1;
-
-            //         @include media(xs){
-            //             width: 100%;
-            //             height: unset;
-            //             position: relative;
-            //         }
-            //     }
-            // }
-
             &.makesDiff{
                 @include center;
                 background-color: var(--white);
@@ -587,15 +437,13 @@ html{
             &.sect5{
                 @include horizontal;
                 justify-content: space-between;
-                // background-color: var(--blueBg);
-                // background-color: rgba(255, 0, 0, 0.175);
                 backdrop-filter: blur(10px);
                 height: 8em !important;
                 min-height: unset;
                 position: relative;
                 &::before{
                     content: '';
-                    background-image: url(../../asset/images/capture.PNG);
+                    background-image: url(../../../asset/images/capture.PNG);
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
