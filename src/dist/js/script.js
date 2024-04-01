@@ -1,18 +1,12 @@
 let documentHead = document.querySelector('head');
 
 let favicon = document.createElement('link');
-// let aosLink = document.createElement('link');
 
 favicon.setAttribute('rel', 'shortcut icon');
 favicon.setAttribute('href', 'asset/images/logo.png');
 favicon.setAttribute('type', 'image/x-icon');
 
-// aosLink.setAttribute('rel', 'stylesheet');
-// aosLink.setAttribute('href', 'src/css/aos.css');
-
 documentHead.appendChild(favicon);
-// documentHead.appendChild(aosLink);
-
 
 AOS.init({
     duration: 800,
