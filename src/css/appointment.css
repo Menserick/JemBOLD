@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-  font-family: "poppins", comfortaa, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: '"Poppins"', "Comfortaa", Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
   border: none;
@@ -57,7 +59,7 @@ html {
 }
 
 * {
-  font-family: "poppins", comfortaa, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: '"Poppins"', "Comfortaa", Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
   border: none;
@@ -146,7 +148,7 @@ body .logo p {
   text-transform: uppercase;
 }
 body .logo p, body .logo p * {
-  font-family: comfortaa, poppins, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Comfortaa", "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
 body .logo p span {
   font-size: 1.3em;
@@ -454,7 +456,7 @@ body section.forRent > div div {
   }
 }
 body section.forRent > div div p.title1 {
-  font-family: pacifico;
+  font-family: "Pacifico";
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--logoBlue);
@@ -570,7 +572,7 @@ body section.team h2 {
   text-transform: capitalize;
 }
 body section.team h2, body section.team h2 * {
-  font-family: comfortaa, poppins, Verdana, Geneva, Tahoma, sans-serif !important;
+  font-family: "Comfortaa", "Poppins", Verdana, Geneva, Tahoma, sans-serif !important;
 }
 body section.team ul {
   display: -webkit-box;
@@ -738,7 +740,7 @@ body section.newsletter > div div {
   width: 100%;
 }
 body section.newsletter > div div:has(p) p {
-  font-family: comfortaa, poppins, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Comfortaa", "Poppins", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2em;
   color: white;
   margin-top: 0.85em;
@@ -1209,7 +1211,7 @@ body section.sect1 > div:first-of-type {
   padding: 2.5em 0;
 }
 body section.sect1 > div:first-of-type h1 {
-  font-family: comfortaa;
+  font-family: "Comfortaa";
   font-size: 3.5em;
   color: var(--white);
   margin: 0.4em 0;
@@ -1253,7 +1255,7 @@ body section.sect2 > div > h2 {
   text-align: center;
 }
 body section.sect2 > div > h2, body section.sect2 > div > h2 * {
-  font-family: comfortaa, poppins, Verdana, Geneva, Tahoma, sans-serif !important;
+  font-family: "Comfortaa", "Poppins", Verdana, Geneva, Tahoma, sans-serif !important;
 }
 body section.sect2 > div > h2 span {
   color: var(--logoBlue);
