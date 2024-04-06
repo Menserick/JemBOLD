@@ -49,7 +49,7 @@ html {
   --blue: #ff0033;
   --redBg: #9f656c;
   --darkBlue: #2e171c;
-  --logoBlue: #94414b;
+  --logoBlue: #e82f2f;
   --logoGreen: #32972f;
   --logoRed: #ff0000;
   --blueBg: #63001a;
@@ -104,7 +104,7 @@ html {
   --blue: #ff0033;
   --redBg: #9f656c;
   --darkBlue: #2e171c;
-  --logoBlue: #94414b;
+  --logoBlue: #e82f2f;
   --logoGreen: #32972f;
   --logoRed: #ff0000;
   --blueBg: #63001a;
@@ -593,6 +593,16 @@ body section.team ul {
       flex-wrap: wrap;
 }
 body section.team ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 1em 5em 1em;
 }
 body section.team ul li div:has(img) {
@@ -603,11 +613,14 @@ body section.team ul li div:has(img) {
 }
 body section.team ul li div:has(img) img {
   width: 100%;
+  max-width: 730px;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 body section.team ul li div:not(:has(img)) {
+  display: grid;
+  place-items: center;
   margin-top: 0.5em;
 }
 body section.team ul li div:not(:has(img)) p {
@@ -1095,8 +1108,8 @@ html body section.sect1 {
 html body section.sect1::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.5254901961);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   position: absolute;
   top: 0;
   right: 0;
@@ -1270,11 +1283,20 @@ html body section.sect2 > div button.appointmentBtn:hover {
   background-color: var(--black);
 }
 html body section.moreThan {
+  display: none;
   background-color: var(--white);
   max-width: 100%;
   min-height: unset;
   padding-right: 0;
   overflow: hidden;
+  position: relative;
+}
+html body section.moreThan h1 {
+  font-family: "Comfortaa";
+  font-weight: 900;
+  position: absolute;
+  top: -1.4rem;
+  left: 4rem;
 }
 html body section.moreThan span.hype {
   display: block;
@@ -1286,27 +1308,21 @@ html body section.moreThan span.hype {
   left: 4rem;
 }
 html body section.moreThan .moreSectDtls {
-  display: grid;
-  place-items: center;
   background-color: var(--white_);
   padding: 4rem 0 4rem 4rem;
-  position: relative;
 }
-html body section.moreThan .moreSectDtls h1 {
-  font-family: "Comfortaa";
-  font-weight: 900;
-  position: absolute;
-  top: -1.4rem;
-  left: 4rem;
-}
-html body section.moreThan .moreSectDtls ul {
+html body section.moreThan .moreSectDtls > div {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 2rem;
-  width: 100%;
+  place-items: center;
   overflow: auto hidden;
 }
-html body section.moreThan .moreSectDtls ul li {
+html body section.moreThan .moreSectDtls > div ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+html body section.moreThan .moreSectDtls > div ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1322,14 +1338,14 @@ html body section.moreThan .moreSectDtls ul li {
   padding: 1rem;
   aspect-ratio: 1/0.6;
 }
-html body section.moreThan .moreSectDtls ul li p {
+html body section.moreThan .moreSectDtls > div ul li p {
   font-size: 0.8rem;
 }
-html body section.moreThan .moreSectDtls ul li svg {
+html body section.moreThan .moreSectDtls > div ul li svg {
   width: 2rem;
   height: 2rem;
 }
-html body section.moreThan .moreSectDtls ul li svg path {
+html body section.moreThan .moreSectDtls > div ul li svg path {
   fill: var(--logoBlue);
 }
 html body section.makesDiff {
@@ -1574,165 +1590,4 @@ html body section.sect5 button {
 html body section.sect5 button:hover {
   -webkit-animation: unset;
           animation: unset;
-}
-html body section.team {
-  background-color: var(--white);
-  min-height: unset;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-html body section.team span.hype {
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto 2em auto;
-}
-html body section.team h2 {
-  text-align: center;
-  margin-bottom: 3.5em;
-  text-transform: capitalize;
-}
-html body section.team h2, html body section.team h2 * {
-  font-family: "Comfortaa", "Poppins", Verdana, Geneva, Tahoma, sans-serif !important;
-}
-html body section.team ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-html body section.team ul li {
-  margin: 0 1em 5em 1em;
-}
-html body section.team ul li div:has(img) {
-  width: 15em;
-  height: 18em;
-  border-radius: 0.5em;
-  overflow: hidden;
-}
-html body section.team ul li div:has(img) img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-html body section.team ul li div:not(:has(img)) {
-  margin-top: 0.5em;
-}
-html body section.team ul li div:not(:has(img)) p {
-  text-align: center;
-}
-html body section.team ul li div:not(:has(img)) p.teamName {
-  font-size: 1.1em;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-html body section.team ul li div:not(:has(img)) p.teamPos {
-  font-size: 0.8em;
-}
-html body section.faqs_sect2 {
-  display: grid;
-  place-items: center;
-  background-color: var(--white);
-  height: 12em;
-  min-height: unset;
-}
-html body section.faqs_sect2 ul {
-  white-space: nowrap;
-  overflow: auto hidden;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-html body section.faqs_sect2 ul li {
-  display: inline-block;
-  margin: 0 0.8em;
-  white-space: nowrap;
-  vertical-align: top;
-  scroll-snap-align: start;
-  cursor: pointer;
-}
-html body section.faqs_sect2 ul li.active .faqs_cate {
-  background-color: var(--blue);
-}
-html body section.faqs_sect2 ul li.active .faqs_cate > div > div {
-  background-color: rgba(255, 255, 255, 0.7882352941);
-}
-html body section.faqs_sect2 ul li.active .faqs_cate > div p {
-  color: var(--white);
-}
-html body section.faqs_sect2 ul li:not(.active):hover .faqs_cate {
-  background-color: #90d2f8;
-}
-html body section.faqs_sect2 ul li:not(.active):hover .faqs_cate > div > div {
-  background-color: rgba(255, 255, 255, 0.7882352941);
-}
-html body section.faqs_sect2 ul li > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-html body section.faqs_sect2 ul li > div > div.faqs_cate {
-  display: inline-block;
-  background-color: var(--white1);
-  width: 15em;
-  aspect-ratio: 1/0.3;
-  padding: 1em 1em 2.5em 1em;
-  border: 0.15em solid var(--white2);
-  border-radius: 2em;
-  position: relative;
-  overflow: hidden;
-}
-html body section.faqs_sect2 ul li > div > div.faqs_cate > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-html body section.faqs_sect2 ul li > div > div.faqs_cate > div > div {
-  display: grid;
-  place-items: center;
-  background-color: rgba(0, 162, 255, 0.2117647059);
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-}
-html body section.faqs_sect2 ul li > div > div.faqs_cate > div > div svg {
-  width: 2em;
-}
-html body section.faqs_sect2 ul li > div > div.faqs_cate > div p {
-  color: var(--black);
 }

@@ -9,8 +9,8 @@ body{
     background-color: var(--bg);
     width: 100vw;
     height: 100vh;
-    // padding-top: 5em;
     overflow: hidden auto;
+    
     .hype{
         font-size: 0.8em;
         background-color: var(--white_);
@@ -395,14 +395,13 @@ body{
                 @include horizontal;
                 justify-content: center;
                 flex-wrap: wrap;
-                // background-color: blue;
                 
                 li{
+                    @include vertical;
+                    align-items: center;
                     margin:  0 1em 5em 1em;
-                    // min-width: 20em;
                     
                     div{
-                        // background-color: red;
 
                         &:has(img){
                             width: 15em;
@@ -412,13 +411,14 @@ body{
 
                             img{
                                 width: 100%;
+                                max-width: 730px;
                                 height: 100%;
                                 object-fit: cover;
                             }
                         }
 
                         &:not(:has(img)){
-                            // background-color: red;
+                            @include center;
                             margin-top: 0.5em;
 
                             p{

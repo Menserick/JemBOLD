@@ -44,7 +44,7 @@ let testimonialInfo = [
     {
         rating: 5,
         comment: "Great. I am Lisa Brown, a Scottish resident in Ghana. I just love their residential spaces.  I can't thank you enough for your excellent work.",
-        proPic: "asset/images/bg2.JPG",
+        proPic: "asset/images/testiuser (3).JPG",
         username: "lisa brown",
         position: "Director of Operations, Acme Corporations"
     },
@@ -57,7 +57,7 @@ let testimonialInfo = [
     {
         rating: 3,
         comment: "Extremely satisfied with everything they did. Their expertise is unmatched and they deliver on their promises. I wonder why I didn't meet them long ago.",
-        proPic: "asset/images/bg2.JPG",
+        proPic: "asset/images/testiuser (1).JPG",
         username: "Frederick mensah",
         position: "Founder of Menserick™"
     },
