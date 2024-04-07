@@ -249,7 +249,7 @@ html{
     
                     .moreSectDtls{
                         background-color: var(--white_);
-                        padding: 4rem 0 4rem 4rem;
+                        padding: 4rem 0 15rem 4rem;
                         
     
                         &>div{
@@ -336,6 +336,30 @@ html{
 
             &.testimonial{
                 background-color: var(--white);
+                position: relative;
+                overflow: hidden;
+
+                // &::before{
+                //     content: '';
+                //     background-color: #ff000012;
+                //     width: 200%;
+                //     height: 8rem;
+                //     position: absolute;
+                //     top: 0;left: -25rem;
+                //     transform: rotate(45deg);
+
+                //     @include media(sm){
+
+                //     }
+                // }
+
+                @include media(md){
+                    min-height: 36rem;
+                }
+
+                // @include media(xs){
+                //     min-height: ;
+                // }
                 
                 span.hype{
                     display: block;

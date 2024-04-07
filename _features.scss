@@ -5,7 +5,6 @@
 @import 'palette';
 @import 'mixin';
 
-// html{overflow: hidden;}
 body{
     background-color: var(--bg);
     width: 100vw;
@@ -445,7 +444,7 @@ body{
 
         &.exp{
             @include center;
-            background-color: var(--dark);
+            background-color: var(--black);
             height: 8em;
             min-height: unset;
             padding: var(--padding) 5%;
@@ -479,6 +478,8 @@ body{
                         width: 5em;
                         height: 5em;
                         margin-right: 1.5em;
+
+                        path{fill: var(--white);}
                     }
 
                     div{

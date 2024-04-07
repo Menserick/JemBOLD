@@ -639,7 +639,7 @@ body section.team ul li div:not(:has(img)) p.teamPos {
 body section.exp {
   display: grid;
   place-items: center;
-  background-color: var(--dark);
+  background-color: var(--black);
   height: 8em;
   min-height: unset;
   padding: var(--padding) 5%;
@@ -693,6 +693,9 @@ body section.exp ul li svg {
   width: 5em;
   height: 5em;
   margin-right: 1.5em;
+}
+body section.exp ul li svg path {
+  fill: var(--white);
 }
 body section.exp ul li div h1 {
   font-family: "Baskerville Old Face", "bookman old style";
@@ -1313,7 +1316,7 @@ html body section.moreThan > div h1 {
 }
 html body section.moreThan > div .moreSectDtls {
   background-color: var(--white_);
-  padding: 4rem 0 4rem 4rem;
+  padding: 4rem 0 15rem 4rem;
 }
 html body section.moreThan > div .moreSectDtls > div {
   display: grid;
@@ -1404,6 +1407,13 @@ html body section.makesDiff ul li img {
 }
 html body section.testimonial {
   background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 62em) {
+  html body section.testimonial {
+    min-height: 36rem;
+  }
 }
 html body section.testimonial span.hype {
   display: block;

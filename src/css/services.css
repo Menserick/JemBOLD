@@ -638,7 +638,7 @@ body section.team ul li div:not(:has(img)) p.teamPos {
 body section.exp {
   display: grid;
   place-items: center;
-  background-color: var(--dark);
+  background-color: var(--black);
   height: 8em;
   min-height: unset;
   padding: var(--padding) 5%;
@@ -692,6 +692,9 @@ body section.exp ul li svg {
   width: 5em;
   height: 5em;
   margin-right: 1.5em;
+}
+body section.exp ul li svg path {
+  fill: var(--white);
 }
 body section.exp ul li div h1 {
   font-family: "Baskerville Old Face", "bookman old style";

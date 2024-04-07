@@ -197,7 +197,7 @@ function autoInsert() {
                         </a>
                     </li> -->
                     <li>
-                        <a href="mailto:jembold@gmail.com">
+                        <a href="mailto:littlejohnmensa9@gmail.com">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3 5V4C2.44772 4 2 4.44772 2 5H3ZM21 5H22C22 4.44772 21.5523 4 21 4V5ZM3 6H21V4H3V6ZM20 5V17H22V5H20ZM19 18H5V20H19V18ZM4 17V5H2V17H4ZM5 18C4.44772 18 4 17.5523 4 17H2C2 18.6569 3.34315 20 5 20V18ZM20 17C20 17.5523 19.5523 18 19 18V20C20.6569 20 22 18.6569 22 17H20Z" fill="#292929"></path>
                                 <path d="M3 5L12 14L21 5"></path>
@@ -245,7 +245,7 @@ function autoInsert() {
                 <ul>
                     <li>+233 (0) 267132805</li>
                     <li>+233 (0) 536275615</li>
-                    <li>jembold@gmail.com</li>
+                    <li>littlejohnmensa9@gmail.com</li>
                     <li>Mitchel Road, Community 8, Tema</li>
                 </ul>
             </li>
