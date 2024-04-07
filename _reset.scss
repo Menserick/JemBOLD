@@ -24,6 +24,7 @@ section{
     --padding: 5em;
     padding: var(--padding) 10%;
     position: relative;
+    overflow: hidden;
     
     &.different{
         min-height: calc(100vh - (var(--padding) * 2));

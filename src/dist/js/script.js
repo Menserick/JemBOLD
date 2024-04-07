@@ -299,7 +299,7 @@ createOverlay();
 const contact = [
     {type: 'phone', data: '+233267132805'},
     {type: 'phone', data: '+233536275615'},
-    {type: 'mail', data: 'jembold@gmail.com'}
+    {type: 'mail', data: 'littlejohnmensa9@gmail.com'}
 ];
 
 let contactOverlay = document.querySelector('.overlayCont');

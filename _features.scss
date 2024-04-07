@@ -5,6 +5,7 @@
 @import 'palette';
 @import 'mixin';
 
+// html{overflow: hidden;}
 body{
     background-color: var(--bg);
     width: 100vw;

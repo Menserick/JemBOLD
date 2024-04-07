@@ -31,6 +31,7 @@ section {
   --padding: 5em;
   padding: var(--padding) 10%;
   position: relative;
+  overflow: hidden;
 }
 section.different {
   min-height: calc(100vh - var(--padding) * 2);
@@ -86,6 +87,7 @@ section {
   --padding: 5em;
   padding: var(--padding) 10%;
   position: relative;
+  overflow: hidden;
 }
 section.different {
   min-height: calc(100vh - var(--padding) * 2);
@@ -1283,46 +1285,48 @@ html body section.sect2 > div button.appointmentBtn:hover {
   background-color: var(--black);
 }
 html body section.moreThan {
-  display: none;
   background-color: var(--white);
   max-width: 100%;
   min-height: unset;
-  padding-right: 0;
+  padding: unset;
   overflow: hidden;
   position: relative;
-}
-html body section.moreThan h1 {
-  font-family: "Comfortaa";
-  font-weight: 900;
-  position: absolute;
-  top: -1.4rem;
-  left: 4rem;
 }
 html body section.moreThan span.hype {
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 3rem;
+}
+html body section.moreThan > div {
+  padding: 0 0 0 10%;
+}
+html body section.moreThan > div h1 {
+  font-family: "Comfortaa";
+  font-weight: 900;
   position: relative;
+  top: 1.4rem;
   left: 4rem;
 }
-html body section.moreThan .moreSectDtls {
+html body section.moreThan > div .moreSectDtls {
   background-color: var(--white_);
   padding: 4rem 0 4rem 4rem;
 }
-html body section.moreThan .moreSectDtls > div {
+html body section.moreThan > div .moreSectDtls > div {
   display: grid;
   place-items: center;
   overflow: auto hidden;
 }
-html body section.moreThan .moreSectDtls > div ul {
+html body section.moreThan > div .moreSectDtls > div ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   width: 100%;
 }
-html body section.moreThan .moreSectDtls > div ul li {
+html body section.moreThan > div .moreSectDtls > div ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1338,14 +1342,14 @@ html body section.moreThan .moreSectDtls > div ul li {
   padding: 1rem;
   aspect-ratio: 1/0.6;
 }
-html body section.moreThan .moreSectDtls > div ul li p {
+html body section.moreThan > div .moreSectDtls > div ul li p {
   font-size: 0.8rem;
 }
-html body section.moreThan .moreSectDtls > div ul li svg {
+html body section.moreThan > div .moreSectDtls > div ul li svg {
   width: 2rem;
   height: 2rem;
 }
-html body section.moreThan .moreSectDtls > div ul li svg path {
+html body section.moreThan > div .moreSectDtls > div ul li svg path {
   fill: var(--logoBlue);
 }
 html body section.makesDiff {
